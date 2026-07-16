@@ -130,8 +130,9 @@ Launch a production-ready sign language translation mobile app on Google Play (a
 
 ### **Technology Stack**
 - **Framework:** React Native with TypeScript
-- **ML:** ONNX Runtime Mobile (ported from WebApp)
-- **Backend:** Supabase (Auth + MFA/TOTP, PostgreSQL, Storage)
+- **ML (On-Device):** ONNX Runtime Mobile (ported from WebApp)
+- **ML Backend:** Python server hosted on [Render](https://render.com). [View Repository](https://github.com/SoumilJana/SignVision_ML_backend)
+- **Backend Services:** Supabase (Auth + MFA/TOTP, PostgreSQL, Storage)
 - **Analytics:** PostHog (product analytics) + Sentry (crash reporting)
 - **Payments:** RevenueCat for subscriptions
 - **Ads:** Google AdMob for free tier
