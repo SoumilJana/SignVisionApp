@@ -1,0 +1,20 @@
+
+# Last dataset composition:
+# Samples per letter:
+#  A: 151
+#  F: 50
+#  I: 50
+#  L: 150
+#  V: 50
+#  W: 150
+# Total: 601 samples across 6 classes
+
+# Last dataset composition:
+# Samples per letter:
+#  A: 151
+#  F: 50
+#  I: 100
+#  L: 150
+#  V: 50
+#  W: 150
+# Total: 651 samples across 6 classes

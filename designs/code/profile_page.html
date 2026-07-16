@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SignVision Profile with DOB</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1978e5",
+                        "primary-dark": "#145db3", 
+                        "primary-gradient-start": "#4f46e5",
+                        "primary-gradient-end": "#1978e5",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111821",
+                        "background-off-white": "#f8fafc",
+                        "text-main": "#0f172a",
+                        "text-muted": "#64748b",
+                        "card-bg": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "2xl": "1.5rem",
+                        "3xl": "2rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'card': '0 10px 30px -5px rgba(0, 0, 0, 0.08)',
+                        'nav': '0 -4px 20px rgba(0,0,0,0.05)',
+                        'fab': '0 8px 30px rgba(25, 120, 229, 0.4)'
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light text-text-main antialiased h-screen w-full flex flex-col overflow-hidden font-display">
+<main class="flex-1 flex flex-col w-full max-w-md mx-auto relative px-6 pt-8 pb-4 overflow-y-auto no-scrollbar">
+<div class="flex justify-between items-start mb-6 pt-4">
+<div>
+<p class="text-text-muted text-sm font-medium mb-1">Welcome back,</p>
+<h1 class="text-3xl font-extrabold tracking-tight text-text-main">Alex Student</h1>
+</div>
+<button class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-soft text-text-main hover:bg-gray-50 transition-colors">
+<span class="material-symbols-outlined filled">notifications</span>
+</button>
+</div>
+<div class="w-full bg-gradient-to-br from-primary-gradient-start to-primary-gradient-end rounded-3xl p-6 text-white shadow-card relative overflow-hidden mb-6 flex flex-col items-center justify-center text-center shrink-0">
+<div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-10 -mt-10 blur-2xl"></div>
+<div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-8 -mb-8 blur-xl"></div>
+<div class="relative z-10 flex flex-col items-center gap-3">
+<div class="p-1 bg-white/20 rounded-full backdrop-blur-sm">
+<div class="w-20 h-20 rounded-full bg-cover bg-center border-2 border-white" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4bTbtqyormmtQhVQV0i1FmHRYubzlL68oxkb0Coly3fHLr4YVlIsA11HM2eSPLHTdFsAvSEW9APTZUZteCM9eDxiYMPkbLROa1sLghs5hY4fbX8mxN1IwJsXwq_XSwTmyV02fP7CFXWZNMkgUv_SERDFzKp40uLgB99ziXJX3yGMI3KMCv7afDBLnzufIjxMFTPb960I5_H-54ZEeb48CT-SOXje2WGyYvZstIerl9yEAUYue8-aKIGb9oS6fdOUGdu5dTT5IsQ");'></div>
+</div>
+<div>
+<h2 class="text-xl font-bold">Alex Student</h2>
+<div class="inline-flex items-center gap-1 bg-white/20 px-3 py-1 rounded-full mt-2 backdrop-blur-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span class="text-xs font-semibold">Pro Member</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full">
+<h3 class="text-lg font-bold text-text-main mb-4">Your Details</h3>
+<div class="bg-white rounded-2xl p-2 shadow-soft mb-4">
+<div class="flex items-center gap-4 p-4 border-b border-gray-100">
+<div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div class="flex-1">
+<p class="text-xs text-text-muted font-medium uppercase">Email</p>
+<p class="text-sm font-semibold text-text-main">alex.s@signvision.com</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 border-b border-gray-100">
+<div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">calendar_month</span>
+</div>
+<div class="flex-1">
+<p class="text-xs text-text-muted font-medium uppercase">Date of Birth</p>
+<p class="text-sm font-semibold text-text-main">January 15, 1998</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4">
+<div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">translate</span>
+</div>
+<div class="flex-1">
+<p class="text-xs text-text-muted font-medium uppercase">Language</p>
+<p class="text-sm font-semibold text-text-main">English (ASL)</p>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-2 shadow-soft">
+<div class="flex items-center gap-4 p-4">
+<div class="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<div class="flex-1 flex justify-between items-center">
+<div>
+<p class="text-xs text-text-muted font-medium uppercase">Current Plan</p>
+<p class="text-sm font-semibold text-text-main">Pro Plan</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full mt-4 mb-24">
+<div class="bg-white rounded-xl p-3 shadow-soft flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-gray-100 flex items-center justify-center text-text-muted">
+<span class="material-symbols-outlined text-[18px]">dark_mode</span>
+</div>
+<span class="text-sm font-medium text-text-main">Dark Mode</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 w-full bg-white border-t border-gray-100 pb-6 pt-2 rounded-t-3xl shadow-nav z-50">
+<div class="flex justify-between items-end max-w-md mx-auto px-6 relative h-16">
+<a class="flex flex-col items-center justify-center gap-1 group w-12 h-full" href="#">
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-[28px]">home</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 group w-12 h-full" href="#">
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-[28px]">school</span>
+</a>
+<div class="relative -top-8 w-16 flex justify-center">
+<button class="w-16 h-16 rounded-full bg-primary text-white shadow-fab flex items-center justify-center transform transition-transform active:scale-95 hover:bg-primary-dark border-[4px] border-white">
+<span class="material-symbols-outlined text-[32px]">photo_camera</span>
+</button>
+</div>
+<a class="flex flex-col items-center justify-center gap-1 group w-12 h-full" href="#">
+<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-[28px] fill-0">content_copy</span>
+</a>
+<a class="flex flex-col items-center justify-end gap-1 group w-12 h-full pb-1" href="#">
+<span class="material-symbols-outlined text-primary text-[28px] font-variation-settings-'FILL'1">person</span>
+<span class="text-primary text-[10px] font-semibold">Profile</span>
+</a>
+</div>
+</nav>
+
+</body></html>

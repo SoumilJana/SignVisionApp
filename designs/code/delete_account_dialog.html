@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SignVision Delete Account Dialog</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1978e5",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111821",
+                        "modal-bg": "#1E293B", // Deep Navy requested
+                        "danger": "#EF4444",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem", // 24px
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden h-screen relative">
+<!-- Background Content (Security Settings) -->
+<!-- Added blur-sm to simulate the background being out of focus behind the modal -->
+<div aria-hidden="true" class="relative flex h-full w-full flex-col bg-slate-50 group/design-root overflow-y-auto filter blur-[2px] pointer-events-none select-none">
+<!-- Header -->
+<div class="flex items-center bg-slate-50 p-4 pb-2 justify-between sticky top-0 z-10 border-b border-slate-100">
+<div class="text-[#0e141b] flex size-12 shrink-0 items-center cursor-pointer hover:bg-slate-100 rounded-full justify-center transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-[#0e141b] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Security</h2>
+</div>
+<!-- List Items -->
+<div class="flex flex-col">
+<!-- Change Password -->
+<div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] justify-between hover:bg-slate-100 transition-colors cursor-pointer border-b border-slate-100">
+<div class="flex items-center gap-4">
+<div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-10">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<p class="text-[#0e141b] text-base font-medium leading-normal flex-1 truncate">Change Password</p>
+</div>
+<div class="shrink-0 text-slate-400">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+<!-- 2FA -->
+<div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] justify-between hover:bg-slate-100 transition-colors border-b border-slate-100">
+<div class="flex items-center gap-4">
+<div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-10">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<p class="text-[#0e141b] text-base font-medium leading-normal flex-1 truncate">Two-Factor Authentication</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-[#e7edf3] p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary transition-colors">
+<div class="h-full w-[27px] rounded-full bg-white shadow-sm transition-all"></div>
+<input checked="" class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Face ID -->
+<div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] justify-between hover:bg-slate-100 transition-colors border-b border-slate-100">
+<div class="flex items-center gap-4">
+<div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-10">
+<span class="material-symbols-outlined">face</span>
+</div>
+<p class="text-[#0e141b] text-base font-medium leading-normal flex-1 truncate">Face ID Login</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-[#e7edf3] p-0.5 has-[:checked]:justify-end has-[:checked]:bg-primary transition-colors">
+<div class="h-full w-[27px] rounded-full bg-white shadow-sm transition-all"></div>
+<input class="invisible absolute" type="checkbox"/>
+</label>
+</div>
+</div>
+<!-- Manage Devices -->
+<div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] justify-between hover:bg-slate-100 transition-colors border-b border-slate-100">
+<div class="flex items-center gap-4">
+<div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-10">
+<span class="material-symbols-outlined">devices</span>
+</div>
+<p class="text-[#0e141b] text-base font-medium leading-normal flex-1 truncate">Manage Devices</p>
+</div>
+<div class="shrink-0 text-slate-400">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</div>
+<!-- Privacy Policy -->
+<div class="flex items-center gap-4 bg-slate-50 px-4 min-h-[72px] justify-between hover:bg-slate-100 transition-colors border-b border-slate-100">
+<div class="flex items-center gap-4">
+<div class="text-[#0e141b] flex items-center justify-center rounded-lg bg-[#e7edf3] shrink-0 size-10">
+<span class="material-symbols-outlined">policy</span>
+</div>
+<p class="text-[#0e141b] text-base font-medium leading-normal flex-1 truncate">Privacy Policy</p>
+</div>
+<div class="shrink-0 text-slate-400">
+<span class="material-symbols-outlined">open_in_new</span>
+</div>
+</div>
+<!-- Delete Account Trigger (Visual only) -->
+<div class="mt-8 px-4">
+<button class="w-full py-3 text-red-600 font-medium bg-red-50 rounded-lg text-sm">Delete Account</button>
+</div>
+</div>
+</div>
+<!-- Modal Overlay -->
+<!-- Using backdrop-blur-sm for the frosted glass effect -->
+<div class="absolute inset-0 z-50 flex items-center justify-center px-4 bg-slate-900/40 backdrop-blur-sm animate-fade-in">
+<!-- Modal Card -->
+<!-- Deep Navy #1E293B, 24px radius (rounded-2xl) -->
+<div class="w-full max-w-[340px] bg-[#1E293B] rounded-2xl p-6 shadow-2xl flex flex-col items-center text-center transform transition-all scale-100 ring-1 ring-white/10">
+<!-- Warning Icon -->
+<div class="mb-5 flex items-center justify-center size-14 rounded-full bg-red-500/10">
+<span class="material-symbols-outlined text-red-500 text-[32px]">delete_forever</span>
+</div>
+<!-- Header -->
+<h3 class="text-slate-50 text-xl font-bold mb-3 tracking-tight">Delete Account?</h3>
+<!-- Body Text -->
+<p class="text-slate-400 text-sm leading-relaxed mb-8">
+                This action is permanent. All your translation history, learning progress, and digital twin data will be lost forever.
+            </p>
+<!-- Actions -->
+<div class="flex flex-col w-full gap-3">
+<!-- Delete Permanently Button -->
+<button class="w-full py-3.5 px-4 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-semibold rounded-xl transition-colors duration-200 shadow-lg shadow-red-900/20 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-[#1E293B]">
+                    Delete Permanently
+                </button>
+<!-- Cancel Button -->
+<button class="w-full py-3.5 px-4 bg-transparent hover:bg-slate-800 active:bg-slate-700 text-slate-300 font-medium rounded-xl border border-slate-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 focus:ring-offset-[#1E293B]">
+                    Cancel
+                </button>
+</div>
+</div>
+</div>
+</body></html>
