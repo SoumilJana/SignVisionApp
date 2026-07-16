@@ -82,3 +82,12 @@ As you make changes to the code in your editor and save the files, the app will 
 - **PostHog Docs:** [posthog.com/docs](https://posthog.com/docs)
 - **Sentry Docs:** [docs.sentry.io](https://docs.sentry.io)
 - **RevenueCat Docs:** [docs.revenuecat.com](https://docs.revenuecat.com)
+
+---
+
+## 👥 Creators & Owners
+
+This project was built and is maintained by:
+- **Soumil Jana** – [Add Your Email Here]
+- **Pankaj Gop** – [Add Email Here]
+- **Alokita Dutta** – [Add Email Here]
