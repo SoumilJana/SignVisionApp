@@ -88,6 +88,6 @@ As you make changes to the code in your editor and save the files, the app will 
 ## 👥 Creators & Owners
 
 This project was built and is maintained by:
-- **Soumil Jana** – [soumil@example.com](mailto:soumil@example.com) *(Update with your real email)*
+- **Soumil Jana** – [janasoumil1005@gmail.com](mailto:janasoumil1005@gmail.com) *(Update with your real email)*
 - **Pankaj Gop** – [pankaj@example.com](mailto:pankaj@example.com) *(Update with real email)*
 - **Alokita Dutta** – [alokita@example.com](mailto:alokita@example.com) *(Update with real email)*
